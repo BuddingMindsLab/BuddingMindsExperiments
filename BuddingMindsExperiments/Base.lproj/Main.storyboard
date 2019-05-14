@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5zR-cm-lMy">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BuddingMindsExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI3-4Z-w9h">
+                                <rect key="frame" x="450" y="223" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CardYouth.jpg"/>
+                                <connections>
+                                    <action selector="cardYouth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7D-mr-52h"/>
+                                    <segue destination="0v1-5i-UKT" kind="show" id="XTM-1D-ifp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-Tj-42q">
+                                <rect key="frame" x="740" y="223" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="CardKid.jpg"/>
+                                <connections>
+                                    <action selector="cardKid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8k-0d-F8q"/>
+                                    <segue destination="zbS-p8-a6C" kind="show" id="f68-Zr-zBw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53f-Qc-eQ1">
+                                <rect key="frame" x="450" y="550" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ABBA.png"/>
+                                <connections>
+                                    <action selector="ABBA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v6x-qP-LeW"/>
+                                    <segue destination="cnG-xN-uxs" kind="show" id="SoL-8g-kLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-GF-tpm">
+                                <rect key="frame" x="160" y="223" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CardAdult.png"/>
+                                <connections>
+                                    <action selector="cardAdult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B86-pC-ShY"/>
+                                    <segue destination="r65-UJ-0UO" kind="show" id="BTo-TC-KwT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YEu-0M-GMk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.40287769784175" y="26.978417266187051"/>
+        </scene>
+        <!--card_adult_sb_id-->
+        <scene sceneID="4aJ-Ip-HJN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Card_Adult_sb" referencedIdentifier="card_adult_sb_id" id="r65-UJ-0UO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6c-Hp-dof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1431" y="-196"/>
+        </scene>
+        <!--KidMain-->
+        <scene sceneID="hiV-yu-JyI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KidMain" id="0v1-5i-UKT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hW2-lN-Tpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="-91"/>
+        </scene>
+        <!--YouthMain-->
+        <scene sceneID="y9R-pJ-wtR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="YouthMain" storyboardName="YouthMain" id="zbS-p8-a6C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9d-iM-XkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="17"/>
+        </scene>
+        <!--abba_sb_id-->
+        <scene sceneID="vue-VZ-p8v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ABBA_sb" referencedIdentifier="abba_sb_id" id="cnG-xN-uxs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvs-yQ-u1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e9K-q6-dDn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5zR-cm-lMy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FzB-wh-cUB">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j9c-qM-ZeV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7GY-9l-P4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.88489208633095" y="26.978417266187051"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ABBA.png" width="167" height="167"/>
+        <image name="CardAdult.png" width="1024" height="1024"/>
+        <image name="CardKid.jpg" width="1024" height="1024"/>
+        <image name="CardYouth.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
